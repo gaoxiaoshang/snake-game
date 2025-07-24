@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贪吃蛇游戏</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        .game-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .game-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 20px;
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .game-card h2 {
+            color: #3498db;
+            margin-top: 0;
+        }
+        .game-card p {
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #2ecc71;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #27ae60;
+        }
+        footer {
+            margin-top: 50px;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>贪吃蛇游戏</h1>
+    
+    <div class="game-container">
+        <div class="game-card">
+            <h2>基础版</h2>
+            <p>简单的贪吃蛇游戏，使用键盘方向键控制蛇的移动。适合初学者体验。</p>
+            <a href="snake_game.html" class="btn">开始游戏</a>
+        </div>
+        
+        <div class="game-card">
+            <h2>高级版</h2>
+            <p>增强版贪吃蛇游戏，包含特殊食物、难度选择、暂停功能和更好的视觉效果。</p>
+            <a href="snake_game_advanced.html" class="btn">开始游戏</a>
+        </div>
+        
+        <div class="game-card">
+            <h2>移动版</h2>
+            <p>专为移动设备优化的贪吃蛇游戏，支持触摸控制和滑动操作。</p>
+            <a href="snake_game_mobile.html" class="btn">开始游戏</a>
+        </div>
+        
+        <div class="game-card">
+            <h2>自定义版</h2>
+            <p>可以自定义蛇和食物外观的贪吃蛇游戏，支持上传自己的图片。</p>
+            <a href="snake_game_custom.html" class="btn">开始游戏</a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>使用HTML, CSS和JavaScript制作的贪吃蛇游戏</p>
+        <p>© 2023 贪吃蛇游戏</p>
+    </footer>
+</body>
+</html>
